@@ -12,6 +12,7 @@ const sorcerer = [
     anime:"Anime: Episode 4",
     userimage:"./user/sukuna3.png",
     domainimage:"",
+    back:"./assets/shrine.png",
     extra:"",
 },
 {
@@ -27,6 +28,7 @@ const sorcerer = [
     anime:"Anime: Episode 7",
     userimage:"./user/gojo.png",
     domainimage:"",
+    back:"./assets/void.png",
     extra:"",
 },
 {
@@ -42,6 +44,7 @@ const sorcerer = [
     anime:"Anime: Episode 23",
     userimage:"./user/megumi.png",
     domainimage:"",
+    back:"",
     extra:"",
 },
 {
@@ -57,6 +60,7 @@ const sorcerer = [
     anime:"Anime: N/A",
     userimage:"./user/naoya.png",
     domainimage:"",
+    back:"",
     extra:"",
 },
 {
@@ -72,6 +76,7 @@ const sorcerer = [
     anime:"Anime: N/A",
     userimage:"./user/hakari.png",
     domainimage:"./domain/deadly.jpg",
+    back:"",
     extra:"",
 },
 {
@@ -87,6 +92,7 @@ const sorcerer = [
     anime:"Anime: N/A",
     userimage:"./user/higuruma.png",
     domainimage:"",
+    back:"",
     extra:"",
 },
 {
@@ -102,6 +108,7 @@ const sorcerer = [
     anime:"Anime: N/A",
     userimage:"./user/Kenjaku.png",
     domainimage:"",
+    back:"",
     extra:"",
 },
 {
@@ -117,6 +124,7 @@ const sorcerer = [
     anime:"Anime: N/A",
     userimage:"./user/yorozu.png",
     domainimage:"",
+    back:"",
     extra:"",
 },
 {
@@ -132,6 +140,7 @@ const sorcerer = [
     anime:"Anime: Episode 36",
     userimage:"./user/smallpox.png",
     domainimage:"",
+    back:"",
     extra:"",
 },
 {
@@ -147,6 +156,7 @@ const sorcerer = [
     anime:"Anime: Episode 7",
     userimage:"./user/dagon.png",
     domainimage:"",
+    back:"",
     extra:"",
 },
 {
@@ -162,6 +172,7 @@ const sorcerer = [
     anime:"Anime: Episode 7",
     userimage:"./user/jogo.png",
     domainimage:"",
+    back:"",
     extra:"",
 },
 {
@@ -177,6 +188,7 @@ const sorcerer = [
     anime:"Anime: Episode 13",
     userimage:"./user/mahito.png",
     domainimage:"",
+    back:"",
     extra:"",
 },
 ];
