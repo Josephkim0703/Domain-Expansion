@@ -1,0 +1,182 @@
+@font-face {
+    font-family: "juju";
+    src: url(./assets/Jujutsu\ Kaisen.ttf);
+}
+@font-face {
+    font-family: "pixel";
+    src: url(./assets/dpcomic.ttf);
+}
+
+body{
+    margin: 0;
+    padding:0;
+    overflow: hidden;
+}
+
+#background{
+    filter: hue-rotate(0);
+    position: absolute;
+    top: 0%;
+    background-repeat:no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transition: 0.4s;
+}
+
+:root{
+    --primary-color: white;
+    --secondary-color: black;
+}
+
+.dark-theme{
+    --primary-color: black;
+    --secondary-color: white;
+}
+
+header{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+input:placeholder-shown {
+    text-align: center;
+  }
+  
+.dark label {
+    border: 2px solid var(--secondary-color);
+    border-radius: 5rem;
+    width: 52px;
+    height: 52px;
+    margin-top: -17px;
+    margin-right: 25px;
+    background-color: white;
+    display: block;
+    transition: 0.5s;
+    box-shadow: 0 0 15px 5px #ffffff;
+    transition: 0.4s;
+    overflow: hidden;
+    box-shadow:0 0 0.4em rgb(0, 204, 255) ;
+}
+
+
+
+g{
+    fill:var(--secondary-color);
+    transition: 0.4s;
+}
+  
+.dark input {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+#website{
+    font-family:'juju','Times New Roman';
+    margin: 0rem 0rem 0rem 1.5rem;
+    font-size: 2rem;
+    transition: 0.4s;
+}
+
+a{
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+main{
+    text-align: center;
+}
+
+#wrapper{
+   position: absolute;
+   top: 17%;
+   left: 51.5%;
+   transform: translate(-50%, -50%);
+}
+
+#title{
+    margin-bottom: 9rem;
+    font-family:'pixel','Times New Roman';
+    font-size:  4.5rem;
+    color: rgb(0, 204, 255);
+    -webkit-text-stroke:rgb(0, 0, 0);
+    -webkit-text-stroke-width: 1px;
+}
+
+#start{
+    text-align: center;
+    font-family:'pixel','Times New Roman';
+    font-size: 2rem;
+    border: none;
+    background-color: transparent;
+}
+
+#picker{
+    position: relative;
+    top: 7rem;
+    left: 44%;
+    transform: translate(-50%, -50%);
+}
+
+#arrows{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 113rem;
+    position: absolute;
+    top: 5.5rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+#arrows button{
+    font-size: 3rem;
+    border: none;
+    background-color: transparent;
+}
+
+#arrows button:hover{
+    text-shadow:0 0 0.1em rgb(0, 204, 255) ;
+}
+
+#arrows button:active{
+    font-size: 2.5rem;
+}
+
+ul img{
+    margin: 0rem -2.5rem;
+}
+
+ul{ 
+    position: absolute;
+    top: 5rem;
+    left: 44%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: row;
+}
+
+#domain{
+    position: absolute;
+    top: 26rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20rem;
+    font-size: 1.2rem;
+    font-family: "pixel",'Times New Roman';
+}
+
+#name{
+    position: absolute;
+    top: -13.5rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30rem;
+    font-size: 1.5rem;
+    font-family: "pixel",'Times New Roman';
+}
