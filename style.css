@@ -95,6 +95,7 @@ main{
 
 #title{
     margin-bottom:11rem;
+    margin-left: -1rem;
     font-family:'pixel','Times New Roman';
     font-size:  4.5rem;
     color: rgb(0, 204, 255);
@@ -121,12 +122,33 @@ main{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 113rem;
+    width: 39rem;
     position: absolute;
-    top: 3.5rem;
-    left: 50%;
+    top: 44.7vh;
+    left: 51.5%;
     transform: translate(-50%, -50%);
     z-index: 1;
+}
+
+#arrows1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 39rem;
+    position: absolute;
+    top: 45vh;
+    left: 51%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+#arrows1 button{
+    color: white;
+    font-size: 3rem;
+    border: none;
+    background-color: transparent;
+    -webkit-text-stroke: black;
+    -webkit-text-stroke-width: 3px;
 }
 
 #arrows button{
@@ -160,6 +182,7 @@ ul img{
     width: 20rem;
     height: 1.5rem;
     transition: 0.4s;
+    
 }
 
 ul{ 
@@ -174,8 +197,8 @@ ul{
 #domain{
     color: white;
     position: absolute;
-    top: 45vh;
-    left: 50%;
+    top: 45.3vh;
+    left: 53%;
     transform: translate(-50%, -50%);
     width: 33rem;
     font-size: 2rem;
@@ -184,15 +207,51 @@ ul{
     -webkit-text-stroke-width: 1px;
 }
 
-#name{
+#name a{
     color: white;
     position: absolute;
     top: -15.5rem;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 30rem;
-    font-size: 2rem;
+    font-size: 4rem;
     font-family: "pixel",'Times New Roman';
     -webkit-text-stroke: black;
-    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-width: 2px;
+}
+
+a{
+    cursor: pointer;
+}
+
+@keyframes moveLeftToRight {
+    0% {
+        transform: translateX(0.7rem) scaleX(-1);
+      }
+      50% {
+        transform: translateX(0) scaleX(-1);
+      }
+      100% {
+          transform: translateX(0.7rem) scaleX(-1);
+        }
+}
+
+@keyframes moveRightToLeft {
+    0% {
+      transform: translateX(-0.7rem);
+    }
+    50% {
+      transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-0.7rem);
+      }
+}
+
+#left-arrow1{
+    animation: moveRightToLeft 0.6s linear infinite;
+}
+
+#right-arrow1{
+    animation: moveLeftToRight 0.6s linear infinite;
 }

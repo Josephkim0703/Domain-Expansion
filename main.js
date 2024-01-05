@@ -1,5 +1,6 @@
 import {sorcerer} from "./data.js";
 
+
 document.getElementById("darkmode").addEventListener ('click', function () {
     document.body.classList.toggle("dark-theme");
 
@@ -40,7 +41,7 @@ function nameSlide(){
     let data = '';
     let currentIndex = 0;
 
-    data = '<h1 id="name' + currentIndex + '">' + sorcerer[currentIndex].user + '</h1>';
+    data = '<a id="name' + currentIndex + '">' + sorcerer[currentIndex].user + '</a>';
   
     //click right array to move forward the module makes sure it wraps around
     document.getElementById('right-arrow').addEventListener('click', function () {
@@ -54,11 +55,34 @@ function nameSlide(){
     });
     
     function update() {
-        data = '<h1 id="name' + currentIndex + '">' + sorcerer[currentIndex].user + '</h1>';
+        data = '<a id="name' + currentIndex + '">' + sorcerer[currentIndex].user + '</a>';
         document.getElementById("name").innerHTML = data;
+        console.log(data);
+
+        let option = document.getElementById("name" + currentIndex)
+        option.onclick = function () {
+            console.log(option);
+    
+    
+        setTimeout(function(){
+          window.location.href = "./info.html";
+        }, 5000);
+    };
     }
    
     document.getElementById("name").innerHTML = data;
+
+            let option = document.getElementById("name" + currentIndex)
+                option.onclick = function () {
+                    console.log(option);
+                      
+                setTimeout(function(){
+                  window.location.href = "./info.html";
+                }, 5000);
+            };
+            
+        
+            
 }
 
 function background(){
