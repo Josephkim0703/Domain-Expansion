@@ -125,6 +125,21 @@ main{
     color: rgb(0, 204, 255);
     -webkit-text-stroke:rgb(0, 0, 0);
     -webkit-text-stroke-width: 1px;
+    transition: 0.2s;
+}
+#title1{
+    position: absolute;
+    top: 3.5rem;
+    left: 49%;
+    transform: translate(-50%, -50%);
+    width: 70rem;
+    font-family:'pixel','Times New Roman';
+    font-size:  7rem;
+    color: rgb(189, 0, 0);
+    -webkit-text-stroke:rgb(0, 0, 0);
+    -webkit-text-stroke-width: 1px;
+    transition: 0.4s;
+    opacity: 0;
 }
 
 #start{
@@ -196,10 +211,10 @@ main{
 
 ul img{
     margin: 0rem -2.5rem;
-   
+    transition: 0.4s;
 }
 
-#stand{
+#stand div{
     border: 3px solid var(--secondary-color);
     border-radius: 50%;
     background-color: var(--primary-color);
@@ -207,9 +222,9 @@ ul img{
     flex-direction: column;
     width: 20rem;
     height: 1.5rem;
-    transition: 0.4s;
-    
+    transition: 0.4s;   
 }
+
 
 ul{ 
     position: absolute;

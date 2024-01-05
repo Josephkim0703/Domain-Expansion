@@ -63,10 +63,21 @@ function nameSlide(){
         option.onclick = function () {
             console.log(option);
 
+            document.getElementById("title1").style.opacity = 1;
+            document.getElementById("title").style.opacity = 0;
+
         setTimeout(function (){
+            document.getElementById("sorcerer-image").style.opacity = 0;
+            document.getElementById("sorcerer-image1").style.opacity = 0;
+            document.getElementById("sorcerer-image3").style.opacity = 0;
+            document.getElementById("sorcerer-image4").style.opacity = 0;
+            document.getElementById("base0").style.opacity = 0;
+            document.getElementById("base1").style.opacity = 0;
+            document.getElementById("base3").style.opacity = 0;
+            document.getElementById("base4").style.opacity = 0;
             document.getElementById("background").style.opacity = 0;
-                document.getElementById("background").style.transition = "1s";
-                    document.getElementById("website").style.color = "white";
+            document.getElementById("background").style.transition = "1s";
+            document.getElementById("website").style.color = "white";
         },1000);
 
         setTimeout(function(){
@@ -80,11 +91,22 @@ function nameSlide(){
             let option = document.getElementById("name" + currentIndex)
                 option.onclick = function () {
                     console.log(option);
+                    
+                    document.getElementById("title").style.opacity = 0;
+                    document.getElementById("title1").style.opacity = 1;
 
-                setTimeout(function (){
+                setTimeout(function (){                 
+                    document.getElementById("base0").style.opacity = 0;
+                    document.getElementById("base1").style.opacity = 0;
+                    document.getElementById("base3").style.opacity = 0;
+                    document.getElementById("base4").style.opacity = 0;
+                    document.getElementById("sorcerer-image").style.opacity = 0;
+                    document.getElementById("sorcerer-image1").style.opacity = 0;
+                    document.getElementById("sorcerer-image3").style.opacity = 0;
+                    document.getElementById("sorcerer-image4").style.opacity = 0;
                     document.getElementById("background").style.opacity = 0;
-                        document.getElementById("background").style.transition = "1s";   
-                            document.getElementById("website").style.color = "white";
+                    document.getElementById("background").style.transition = "1s";   
+                    document.getElementById("website").style.color = "white";
                 },1000);
 
                 setTimeout(function(){
