@@ -62,8 +62,13 @@ function nameSlide(){
         let option = document.getElementById("name" + currentIndex)
         option.onclick = function () {
             console.log(option);
-    
-    
+
+        setTimeout(function (){
+            document.getElementById("background").style.opacity = 0;
+                document.getElementById("background").style.transition = "1s";
+                    document.getElementById("website").style.color = "white";
+        },1000);
+
         setTimeout(function(){
           window.location.href = "./info.html";
         }, 5000);
@@ -75,14 +80,17 @@ function nameSlide(){
             let option = document.getElementById("name" + currentIndex)
                 option.onclick = function () {
                     console.log(option);
-                      
+
+                setTimeout(function (){
+                    document.getElementById("background").style.opacity = 0;
+                        document.getElementById("background").style.transition = "1s";   
+                            document.getElementById("website").style.color = "white";
+                },1000);
+
                 setTimeout(function(){
                   window.location.href = "./info.html";
                 }, 5000);
-            };
-            
-        
-            
+            };         
 }
 
 function background(){
@@ -100,9 +108,10 @@ function background(){
     });
     
     function update() {  
-        document.getElementById("background").src =  sorcerer[currentIndex].back;
+        document.getElementById("background-domain").src =  sorcerer[currentIndex].back;
+        console.log(currentIndex);
     }
-    document.getElementById("background").src =  sorcerer[currentIndex].back;
+    document.getElementById("background-domain").src =  sorcerer[currentIndex].back;
 }
 
 function charaterSlide(){
@@ -133,7 +142,8 @@ function charaterSlide(){
     document.getElementById("sorcerer-image3").src = sorcerer[currentIndex + 1].userimage ;
     document.getElementById("sorcerer-image4").src = sorcerer[currentIndex + 2].userimage ;
 }
-
+ 
+background();
 charaterSlide();
 powerSlide();
 nameSlide();

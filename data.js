@@ -12,7 +12,7 @@ const sorcerer = [
     anime:"Anime: Episode 4",
     userimage:"./user/sukuna3.png",
     domainimage:"",
-    back:"./assets/shrine.png",
+    back:"./domain/shrine.png",
     extra:"",
 },
 {
@@ -28,7 +28,7 @@ const sorcerer = [
     anime:"Anime: Episode 7",
     userimage:"./user/gojo.png",
     domainimage:"",
-    back:"./assets/void.png",
+    back:"./domain/void.png",
     extra:"",
 },
 {
@@ -44,7 +44,7 @@ const sorcerer = [
     anime:"Anime: Episode 23",
     userimage:"./user/megumi.png",
     domainimage:"",
-    back:"",
+    back:"./domain/chimera.png",
     extra:"",
 },
 {
@@ -60,7 +60,7 @@ const sorcerer = [
     anime:"Anime: N/A",
     userimage:"./user/naoya.png",
     domainimage:"",
-    back:"",
+    back:"./domain/cell1.png",
     extra:"",
 },
 {
@@ -76,7 +76,7 @@ const sorcerer = [
     anime:"Anime: N/A",
     userimage:"./user/hakari.png",
     domainimage:"./domain/deadly.jpg",
-    back:"",
+    back:"./domain/gamble.png",
     extra:"",
 },
 {
@@ -92,7 +92,7 @@ const sorcerer = [
     anime:"Anime: N/A",
     userimage:"./user/higuruma.png",
     domainimage:"",
-    back:"",
+    back:"./domain/court.png",
     extra:"",
 },
 {
@@ -108,7 +108,7 @@ const sorcerer = [
     anime:"Anime: N/A",
     userimage:"./user/Kenjaku.png",
     domainimage:"",
-    back:"",
+    back:"./domain/tomb.png",
     extra:"",
 },
 {
@@ -124,7 +124,7 @@ const sorcerer = [
     anime:"Anime: N/A",
     userimage:"./user/yorozu.png",
     domainimage:"",
-    back:"",
+    back:"./domain/three.png",
     extra:"",
 },
 {
@@ -140,7 +140,7 @@ const sorcerer = [
     anime:"Anime: Episode 36",
     userimage:"./user/smallpox.png",
     domainimage:"",
-    back:"",
+    back:"./domain/smallpox.png",
     extra:"",
 },
 {
@@ -156,7 +156,7 @@ const sorcerer = [
     anime:"Anime: Episode 7",
     userimage:"./user/dagon.png",
     domainimage:"",
-    back:"",
+    back:"./domain/skandha.png",
     extra:"",
 },
 {
@@ -172,7 +172,7 @@ const sorcerer = [
     anime:"Anime: Episode 7",
     userimage:"./user/jogo.png",
     domainimage:"",
-    back:"",
+    back:"./domain/mountain.png",
     extra:"",
 },
 {
@@ -188,7 +188,7 @@ const sorcerer = [
     anime:"Anime: Episode 13",
     userimage:"./user/mahito.png",
     domainimage:"",
-    back:"",
+    back:"./domain/perfect.png",
     extra:"",
 },
 ];
