@@ -76,15 +76,12 @@ input:placeholder-shown {
     margin-right: 25px;
     background-color: var(--secondary-color);
     display: block;
-    transition: 0.5s;
-    transition: 0.4s;
     overflow: hidden;
 }
 
 g{
     cursor: pointer;
     fill:var(--primary-color);
-    transition: 0.4s;
 }
   
 .dark input {
@@ -164,7 +161,7 @@ main{
     width: 39rem;
     position: absolute;
     top: 44.7vh;
-    left: 51.5%;
+    left: 49%;
     transform: translate(-50%, -50%);
     z-index: 1;
  
@@ -177,7 +174,7 @@ main{
     width: 35rem;
     position: absolute;
     top: -15.6rem;
-    left: 49%;
+    left: 40%;
     transform: translate(-50%, -50%);
     z-index: 1;
 }
@@ -214,17 +211,19 @@ ul img{
     transition: 0.4s;
 }
 
-#stand div{
-    border: 3px solid var(--secondary-color);
+#shadow{
+    border: 1px solid aqua(52, 52, 219);
+    position: absolute;
+    top: 28.2rem;
+    left: 51.5%;
+    z-index: -1;
+    transform: translate(-50%, -50%);
     border-radius: 50%;
-    background-color: var(--primary-color);
-    display: flex;
-    flex-direction: column;
-    width: 20rem;
-    height: 1.5rem;
-    transition: 0.4s;   
+    width: 27.6rem;
+    height: 8rem;
+    background-color:aqua;
+    filter: blur(15px);
 }
-
 
 ul{ 
     position: absolute;
@@ -239,7 +238,7 @@ ul{
     color: white;
     position: absolute;
     top: 45.3vh;
-    left: 53%;
+    left: 50%;
     transform: translate(-50%, -50%);
     width: 33rem;
     font-size: 2rem;
@@ -263,7 +262,7 @@ ul{
 }
 
 #name a:active{
-font-size: 3.8rem;
+font-size: 3.5rem;
 }
 
 @keyframes moveLeftToRight {

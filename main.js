@@ -82,7 +82,7 @@ function nameSlide(){
 
         setTimeout(function(){
           window.location.href = "./info.html";
-        }, 5000);
+        }, 2700);
     };
     }
    
@@ -111,7 +111,7 @@ function nameSlide(){
 
                 setTimeout(function(){
                   window.location.href = "./info.html";
-                }, 5000);
+                }, 2700);
             };         
 }
 
