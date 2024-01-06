@@ -96,6 +96,13 @@
        <a href=""><h1 id="website">Domain Encyclopedia</h1></a>
     </header>
 
+    <div id="pop-up">
+        <button id="x">&#10005;</button>
+        <h1>Domain Encyclopedia</h1>
+        <h2>This website show cases all 12 domain expansions currently revealed. Giving details explanations on the domain and user.<br><br>
+        Please <span style="color: red;">{CLICK}</span> on the characters <span style="color: red;">{NAME}</span> you would like to select to enter into their domain.</h2>
+    </div>
+
     <main>
         <div id="wrapper">
         <h1 id="title">Choose Your<br>Character</h1>
@@ -132,9 +139,18 @@
       <!-- <button id="start">Enter Domain</button>--> 
     </div>
     </main>
+
     <img src="./assets/school.png" alt="" id="background">
     <img src="" alt="" id="background-domain">
-
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js">
+        
+            var isModalShow = sessionStorage.getItem('alreadyShow');
+    if (isModalShow !== 'alreadyShown') {
+      $("#pop-up").show();
+      sessionStorage.setItem('alreadyShow', 'alreadyShown');
+    }
+    </script>
 <script src="./main.js" type="module"></script>
+
 </body>
 </html>
