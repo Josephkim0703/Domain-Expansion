@@ -1,0 +1,82 @@
+@font-face {
+    font-family: "juju";
+    src: url(./assets/Jujutsu\ Kaisen.ttf);
+}
+
+@font-face {
+    font-family: "pixel";
+    src: url(./assets/dpcomic.ttf);
+}
+
+body{
+    margin: 0;
+    padding:0;
+    overflow: hidden;
+}
+
+#background-domain{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-repeat:no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    min-width: 1920px;
+    min-height: 1080px;
+    z-index: -2;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#website1{
+    font-family:'juju','Times New Roman';
+    margin: 0rem 0rem 0rem 1.5rem;
+    font-size: 2rem;
+    transition: 0.4s;
+    color: black;
+    z-index: 1;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+main{
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: flex;
+}
+
+#user{
+    width: 34rem;
+    display: block;
+    position: absolute;
+    top: 27%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+main h1{
+    
+    color: white;
+    width: 33rem;
+    font-size: 3rem;
+    font-family: 'Times New Roman';
+    transform: translateY(-22rem);
+    margin: 0rem 21rem ;
+}
+

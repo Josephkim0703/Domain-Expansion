@@ -1,6 +1,7 @@
 import {sorcerer} from "./data.js";
 
-document.getElementById("x").onclick = function(){
+function main(){
+    document.getElementById("x").onclick = function(){
         document.getElementById("pop-up").style.display = "none";   
 }
 
@@ -14,6 +15,13 @@ document.getElementById("darkmode").addEventListener ('click', function () {
         document.getElementById("background").style.filter = "";
     }
 });
+
+background();
+charaterSlide();
+powerSlide();
+nameSlide();
+
+}
 
 function powerSlide(){
     let data = '';
@@ -66,6 +74,8 @@ function nameSlide(){
         option.onclick = function () {
             console.log(option);
 
+            localStorage.getItem(option);
+
             document.getElementById("title1").style.opacity = 1;
             document.getElementById("title").style.opacity = 0;
 
@@ -80,7 +90,7 @@ function nameSlide(){
             document.getElementById("base4").style.opacity = 0;
             document.getElementById("background").style.opacity = 0;
             document.getElementById("background").style.transition = "1s";
-            document.getElementById("website").style.color = "white";
+            color();
         },1000);
 
         setTimeout(function(){
@@ -95,6 +105,8 @@ function nameSlide(){
                 option.onclick = function () {
                     console.log(option);
                     
+                    localStorage.getItem(option);
+
                     document.getElementById("title").style.opacity = 0;
                     document.getElementById("title1").style.opacity = 1;
 
@@ -109,13 +121,57 @@ function nameSlide(){
                     document.getElementById("sorcerer-image4").style.opacity = 0;
                     document.getElementById("background").style.opacity = 0;
                     document.getElementById("background").style.transition = "1s";   
-                    document.getElementById("website").style.color = "white";
+                    color();
                 },1000);
 
                 setTimeout(function(){
                   window.location.href = "./info.html";
                 }, 2700);
-            };         
+            };    
+            
+function color(){
+
+                switch (true) {
+                    case currentIndex === 0:
+                        document.getElementById("website").style.color = "white";
+                        break;
+                    case currentIndex === 1:
+                        document.getElementById("website").style.color = "white";
+                         break;
+                    case currentIndex === 2:
+                        document.getElementById("website").style.color = "white";
+                        break;
+                    case currentIndex === 3:
+                        document.getElementById("website").style.color = "white";
+                         break;
+                    case currentIndex === 4:
+                        document.getElementById("website").style.color = "black";
+                         break;
+                    case currentIndex === 5:
+                        document.getElementById("website").style.color = "white";
+                        break;
+                    case currentIndex === 6:
+                        document.getElementById("website").style.color = "black";
+                        break;
+                    case currentIndex === 7:
+                        document.getElementById("website").style.color = "black";
+                        break;
+                    case currentIndex === 8:
+                        document.getElementById("website").style.color = "white";
+                        break;
+                    case currentIndex === 9:
+                        document.getElementById("website").style.color = "black";
+                        break;
+                    case currentIndex === 10:
+                        document.getElementById("website").style.color = "white";
+                        break;
+                    case currentIndex === 11:
+                        document.getElementById("website").style.color = "white";
+                        break;
+                    default:
+                        break;
+                  }
+}
 }
 
 function background(){
@@ -125,18 +181,28 @@ function background(){
     document.getElementById('right-arrow').addEventListener('click', function () {
         currentIndex = (currentIndex + 1) % sorcerer.length;
         update();
+
     });
     //click left array to move forward the module makes sure it wraps around
     document.getElementById('left-arrow').addEventListener('click', function () {
         currentIndex = (currentIndex - 1 + sorcerer.length) % sorcerer.length;
         update();
+
     });
     
     function update() {  
         document.getElementById("background-domain").src =  sorcerer[currentIndex].back;
         console.log(currentIndex);
+        saveIndexToLocalStorage();
     }
+
+    function saveIndexToLocalStorage() {
+        localStorage.setItem('index', currentIndex);
+    }
+    saveIndexToLocalStorage();
     document.getElementById("background-domain").src =  sorcerer[currentIndex].back;
+
+   
 }
 
 function charaterSlide(){
@@ -167,10 +233,9 @@ function charaterSlide(){
     document.getElementById("sorcerer-image3").src = sorcerer[currentIndex + 1].userimage ;
     document.getElementById("sorcerer-image4").src = sorcerer[currentIndex + 2].userimage ;
 }
+
+
  
-background();
-charaterSlide();
-powerSlide();
-nameSlide();
+main();
 
 

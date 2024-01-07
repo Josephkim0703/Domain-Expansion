@@ -14,6 +14,7 @@ const sorcerer = [
     domainimage:"",
     back:"./domain/shrine.png",
     extra:"",
+    full:"./user/npsukuna.png",
 },
 {
     name:"Unlimited Void",
