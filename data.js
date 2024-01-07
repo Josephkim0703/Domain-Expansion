@@ -14,7 +14,7 @@ const sorcerer = [
     domainimage:"",
     back:"./domain/shrine.png",
     extra:"",
-    full:"./user/npsukuna.png",
+    full:"./user/2sukuna.png",
 },
 {
     name:"Unlimited Void",
@@ -31,6 +31,7 @@ const sorcerer = [
     domainimage:"",
     back:"./domain/void.png",
     extra:"",
+    full:"./user/2gojo.png",
 },
 {
     name:"Chimera Shadow Garden",
@@ -47,6 +48,7 @@ const sorcerer = [
     domainimage:"",
     back:"./domain/chimera.png",
     extra:"",
+    full:"./user/1megumi.png",
 },
 {
     name:"Time Cell Moon Palace",
@@ -63,6 +65,7 @@ const sorcerer = [
     domainimage:"",
     back:"./domain/cell1.png",
     extra:"",
+    full:"./user/2naoya.png",
 },
 {
     name:"Idle Death Gamble",
@@ -79,6 +82,7 @@ const sorcerer = [
     domainimage:"./domain/deadly.jpg",
     back:"./domain/gamble.png",
     extra:"",
+    full:"./user/1mahito.png",
 },
 {
     name:"Deadly Sentencing",
@@ -95,6 +99,7 @@ const sorcerer = [
     domainimage:"",
     back:"./domain/court.png",
     extra:"",
+    full:"./user/2higor.png",
 },
 {
     name:"Womb Profusion",
@@ -111,6 +116,7 @@ const sorcerer = [
     domainimage:"",
     back:"./domain/tomb.png",
     extra:"",
+    full:"./user/1mahito.png",
 },
 {
     name:"Threefold Affliction",
@@ -127,6 +133,7 @@ const sorcerer = [
     domainimage:"",
     back:"./domain/three.png",
     extra:"",
+    full:"./user/1mahito.png",
 },
 {
     name:"Unknown Name",
@@ -143,6 +150,7 @@ const sorcerer = [
     domainimage:"",
     back:"./domain/smallpox.png",
     extra:"",
+    full:"./user/1mahito.png",
 },
 {
     name:"Horizon of the Captivating Skandha",
@@ -159,6 +167,7 @@ const sorcerer = [
     domainimage:"",
     back:"./domain/skandha.png",
     extra:"",
+    full:"./user/2dagon.png",
 },
 {
     name:"Coffin of the Iron Mountain",
@@ -175,6 +184,7 @@ const sorcerer = [
     domainimage:"",
     back:"./domain/mountain.png",
     extra:"",
+    full:"./user/2jogo.png",
 },
 {
     name:"Self-Embodiment of Perfection",
@@ -191,6 +201,7 @@ const sorcerer = [
     domainimage:"",
     back:"./domain/perfect.png",
     extra:"",
+    full:"./user/2mahito.png",
 },
 ];
 
