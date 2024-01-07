@@ -54,7 +54,7 @@ a{
 main{
     z-index: 1;
     position: absolute;
-    top: 50%;
+    top: 64%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -65,9 +65,16 @@ main{
     width: 55rem;
     display: block;
     position: absolute;
-    top:  30%;
+    top:  34%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+#left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
 }
 
 main h1{ 
@@ -75,8 +82,25 @@ main h1{
     width: 33rem;
     font-size: 3rem;
     font-family: 'Times New Roman';
-    transform: translateY(-22rem);
     margin: 0rem 21rem ;
     text-shadow: 2px 2px 0px rgb(0, 0, 0), 0 0 0.1em rgb(0, 0, 0);
+}
+
+main p{
+    color: white;
+    font-size: 1.24rem;
+    width: 40rem;
+    text-align: start;
+    margin-bottom: 0rem;
+    margin-top: 10px;
+    text-shadow: 2px 2px 0px rgb(0, 0, 0), 0 0 0.1em rgb(0, 0, 0);
+}
+
+#appearance{
+    margin-top: 1.1rem;
+    margin-left: -21.5rem;
+    border: 2px solid white;
+    border-radius: 2rem;
+    width: 18rem;
 }
 

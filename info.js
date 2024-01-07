@@ -13,6 +13,12 @@ function setup(){
     document.getElementById("user").src = sorcerer[storedIndex].full;
     document.getElementById("domain").innerHTML = sorcerer[storedIndex].name;
     document.getElementById("sorcerer").innerHTML = sorcerer[storedIndex].user;
+    document.getElementById("user-info").innerHTML = sorcerer[storedIndex].userinfo;
+    document.getElementById("manga").innerHTML = sorcerer[storedIndex].manga;
+    document.getElementById("anime").innerHTML = sorcerer[storedIndex].anime;
+    document.getElementById("domain-info").innerHTML = sorcerer[storedIndex].domain;
+    document.getElementById("extra").innerHTML = sorcerer[storedIndex].extra;
+    document.getElementById("appearance").src = sorcerer[storedIndex].appear;
 }
 
 function color(){
