@@ -62,7 +62,7 @@ main{
 }
 
 #user{
-    width: 56rem;
+    width: 55rem;
     display: block;
     position: absolute;
     top:  30%;
@@ -70,13 +70,13 @@ main{
     transform: translate(-50%, -50%);
 }
 
-main h1{
-    
+main h1{ 
     color: white;
     width: 33rem;
     font-size: 3rem;
     font-family: 'Times New Roman';
     transform: translateY(-22rem);
     margin: 0rem 21rem ;
+    text-shadow: 2px 2px 0px rgb(0, 0, 0), 0 0 0.1em rgb(0, 0, 0);
 }
 

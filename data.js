@@ -31,7 +31,7 @@ const sorcerer = [
     domainimage:"",
     back:"./domain/void.png",
     extra:"",
-    full:"./user/2gojo.png",
+    full:"./user/1gojo.png",
 },
 {
     name:"Chimera Shadow Garden",
@@ -48,7 +48,7 @@ const sorcerer = [
     domainimage:"",
     back:"./domain/chimera.png",
     extra:"",
-    full:"./user/1megumi.png",
+    full:"./user/2megumi.png",
 },
 {
     name:"Time Cell Moon Palace",
@@ -82,7 +82,7 @@ const sorcerer = [
     domainimage:"./domain/deadly.jpg",
     back:"./domain/gamble.png",
     extra:"",
-    full:"./user/1mahito.png",
+    full:"./user/2hakari.png",
 },
 {
     name:"Deadly Sentencing",
@@ -99,7 +99,7 @@ const sorcerer = [
     domainimage:"",
     back:"./domain/court.png",
     extra:"",
-    full:"./user/2higor.png",
+    full:"./user/2higur.png",
 },
 {
     name:"Womb Profusion",
@@ -116,7 +116,7 @@ const sorcerer = [
     domainimage:"",
     back:"./domain/tomb.png",
     extra:"",
-    full:"./user/1mahito.png",
+    full:"./user/2kenjaku.png",
 },
 {
     name:"Threefold Affliction",
@@ -133,7 +133,7 @@ const sorcerer = [
     domainimage:"",
     back:"./domain/three.png",
     extra:"",
-    full:"./user/1mahito.png",
+    full:"./user/2yoru.png",
 },
 {
     name:"Unknown Name",
