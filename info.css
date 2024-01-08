@@ -77,6 +77,13 @@ main{
     z-index: 2;
 }
 
+#right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+}
+
 main h1{ 
     color: white;
     width: 33rem;
@@ -99,7 +106,15 @@ main p{
 #appearance{
     margin-top: 1.1rem;
     margin-left: -21.5rem;
-    border: 2px solid white;
+    border: 3px solid white;
+    border-radius: 2rem;
+    width: 18rem;
+}
+
+#right video{
+    margin: 2rem 0rem 0rem -21.5rem;
+    
+    border: 3px solid white;
     border-radius: 2rem;
     width: 18rem;
 }
