@@ -17,12 +17,14 @@ function setup(){
     document.getElementById("manga").innerHTML = sorcerer[storedIndex].manga;
     document.getElementById("anime").innerHTML = sorcerer[storedIndex].anime;
     document.getElementById("domain-info").innerHTML = sorcerer[storedIndex].domain;
+    document.getElementById("domain-name").innerHTML = sorcerer[storedIndex].domainname;
     document.getElementById("extra").innerHTML = sorcerer[storedIndex].extra;
     document.getElementById("appearance").src = sorcerer[storedIndex].appear;
     document.getElementById("domain-more-info").innerHTML = sorcerer[storedIndex].domaininfo;
     document.getElementById("domain-vid").src = sorcerer[storedIndex].domainvid;
     document.getElementById("translation").innerHTML = sorcerer[storedIndex].translation;
     document.getElementById("lore").innerHTML = sorcerer[storedIndex].lore;
+    document.getElementById("hand").src = sorcerer[storedIndex].hand;
 }
 
 function color(){

@@ -54,7 +54,7 @@ a{
 main{
     z-index: 1;
     position: absolute;
-    top: 64%;
+    top: 52vh;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -65,7 +65,7 @@ main{
     width: 55rem;
     display: block;
     position: absolute;
-    top:  34%;
+    top:  44%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -104,18 +104,28 @@ main p{
 }
 
 #appearance{
-    margin-top: 1.1rem;
-    margin-left: -21.5rem;
+    top: 39.5rem;
+    left: 18rem;
+    position: absolute;
+    border: 3px solid white;
+    border-radius: 2rem;
+    width: 18rem;
+    transform: translateY(-16.2rem)
+}
+
+#right video{
+    margin: 2rem 0rem 0rem -21.5rem;   
     border: 3px solid white;
     border-radius: 2rem;
     width: 18rem;
 }
 
-#right video{
-    margin: 2rem 0rem 0rem -21.5rem;
-    
+#hand{
+    top: 39.7rem;
+    left: 39.5rem;
+    position: absolute;
     border: 3px solid white;
     border-radius: 2rem;
-    width: 18rem;
+    width: 15rem;
 }
 
