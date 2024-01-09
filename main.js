@@ -1,9 +1,9 @@
 import {sorcerer} from "./data.js";
 
 function main(){
-    document.getElementById("x").onclick = function(){
-        document.getElementById("pop-up").style.display = "none";   
-}
+ //   document.getElementById("x").onclick = function(){
+ //       document.getElementById("pop-up").style.display = "none";   
+//}
 
 document.getElementById("darkmode").addEventListener ('click', function () {
     document.body.classList.toggle("dark-theme");
