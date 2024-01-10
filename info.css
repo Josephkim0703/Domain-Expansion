@@ -113,6 +113,82 @@ main p{
     transform: translateY(-16.5rem)
 }
 
+#hakari{
+    top: 34.5rem;
+    left: 14.5rem;
+    position: absolute;
+    border: 2px solid orange;
+    border-radius: 2rem;
+    width: 20rem;
+    height: 18rem;
+    transform: translate(-7px,-16.5rem);
+    display: block;
+    transition: 0.4s;
+
+}
+
+#hakari:hover{
+    border: 3px solid rgb(0, 38, 255);
+}
+
+#button{
+    border: 0px;
+    background-color: transparent;
+}
+
+#x{
+    width: 2rem;
+    height: 2rem;
+    border: 2px solid black;
+    border-radius: 50%;
+    font-weight: 900;
+    font-size: 1rem;
+    position: absolute;
+    z-index: 10;
+    top: 3rem;
+    left: -22rem;
+    display: none;
+}
+
+#one{
+    text-decoration: underline;
+    width: 2rem;
+    height: 2rem;
+    border: 0px;
+    background-color: transparent;
+    border-radius: 50%;
+    font-weight: 900;
+    font-size: 1.5rem;
+    position: absolute;
+    z-index: 10;
+    top: 49.5rem;
+    left: -1.1rem;
+    display: none;
+}
+
+#two{
+    width: 2rem;
+    height: 2rem;
+    border: 0px;
+    background-color: transparent;
+    border-radius: 50%;
+    font-weight: 900;
+    font-size: 1.5rem;
+    position: absolute;
+    z-index: 10;
+    top: 49.5rem;
+    left: 1.1rem;
+    display: none;
+}
+
+#x:hover{
+    background-color: rgb(170, 170, 170)
+}
+#one:hover, #two:hover{
+color: rgb(119, 119, 119);
+;
+}
+
 #right video{
     margin: 2rem 0rem 0rem -21.5rem;   
     border: 3px solid white;
