@@ -124,7 +124,7 @@ main p{
     transform: translate(-7px,-16.5rem);
     display: block;
     transition: 0.4s;
-
+    cursor: pointer;
 }
 
 #hakari:hover{
@@ -134,6 +134,7 @@ main p{
 #button{
     border: 0px;
     background-color: transparent;
+    display: none;
 }
 
 #x{
@@ -164,6 +165,8 @@ main p{
     top: 49.5rem;
     left: -1.1rem;
     display: none;
+    color: white;
+    text-shadow: 1.5px 1.5px 0px rgb(0, 0, 0), 0 0 0.1em rgb(0, 0, 0);
 }
 
 #two{
@@ -179,11 +182,14 @@ main p{
     top: 49.5rem;
     left: 1.1rem;
     display: none;
+    color: white;
+    text-shadow: 1.5px 1.5px 0px rgb(0, 0, 0), 0 0 0.1em rgb(0, 0, 0);
 }
 
 #x:hover{
 background-color: rgb(170, 170, 170)
 }
+
 #one:hover, #two:hover{
 color: rgb(119, 119, 119);
 ;
