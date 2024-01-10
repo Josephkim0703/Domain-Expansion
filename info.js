@@ -83,7 +83,7 @@ function setup(){
             document.getElementById("hakari").src = "./assets/game.png";
         }
     }
-   
+    //higuruma's data
     if(storedIndex == 5){
         document.getElementById("button").style.display = "block";
         document.getElementById("left").style.transform = "translateX(" + 3 +"rem)";

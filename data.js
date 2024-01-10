@@ -142,7 +142,7 @@ const sorcerer = [
     hakari:"./assets/weopon.jpg",
     hand:"./assets/judge.jpg",
     back:"./domain/court.png",
-    full:"./user/2higur.png",
+    full:"./user/3higur.png",
 },
 {
     name:"Womb Profusion",
