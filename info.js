@@ -26,6 +26,7 @@ function setup(){
     document.getElementById("lore").innerHTML = sorcerer[storedIndex].lore;
     document.getElementById("hand").src = sorcerer[storedIndex].hand;
 
+    //hakari's data
     if(storedIndex == 4){
         document.getElementById("left").style.transform = "translateX(" + 3 +"rem)";
         document.getElementById("right").style.transform = "translateX(-" + 3 +"rem)";
