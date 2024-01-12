@@ -147,7 +147,15 @@ function setup(){
             document.getElementById("hakari").src = "./assets/judgeman.jpg";
         }
     }
+    if(storedIndex == 6 || storedIndex == 7){
+        document.getElementById("appearance").style.border = 3 +"px solid black";
+        document.getElementById("hand").style.border = 3 +"px solid black";
+        document.getElementById("domain-vid").style.border = 3 +"px solid black";
+        document.getElementById("past").src = sorcerer[storedIndex].former;
+        document.getElementById("past").style.display = "block";
+    }
 }
+
 
 function color(){
 

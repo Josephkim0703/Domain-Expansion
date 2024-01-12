@@ -211,3 +211,14 @@ color: rgb(119, 119, 119);
     width: 15rem;
 }
 
+#past{
+    display: none;
+    top: 42rem;
+    left: 96rem;
+    position: absolute;
+    border: 3px solid black;
+    border-radius: 2rem;
+    width: 32rem; 
+    height: 12rem; 
+}
+
