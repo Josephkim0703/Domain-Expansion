@@ -45,6 +45,7 @@ function setup(){
         document.getElementById("translation").style.transform = "translate("+ 10 +"rem," + 0.6 +"rem)";
         document.getElementById("translation").style.width = 22 + "rem";
         document.getElementById("hakari").style.display = "block";
+        document.getElementById("manga").style.marginLeft = "-"+40+"px";
         document.getElementById("hakari").src = sorcerer[storedIndex].hakari;
 
         document.getElementById("button").onclick = function(){
@@ -107,6 +108,7 @@ function setup(){
         document.getElementById("x").style.transform = "translate("+ 1.5 +"rem,"+ 2.5 +"rem)";
         document.getElementById("one").style.transform = "translate("+ 3 +"rem,-"+ 7.5 +"rem)";
         document.getElementById("two").style.transform = "translate("+ 3 +"rem,-"+ 7.5 +"rem)";
+        document.getElementById("manga").style.marginLeft = "-"+40+"px";
 
 
         document.getElementById("button").onclick = function(){
