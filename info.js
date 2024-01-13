@@ -126,7 +126,7 @@ function setup(){
         document.getElementById("x").onclick = function(){
             document.getElementById("one").style.textDecoration = "underline";
             document.getElementById("two").style.textDecoration = "none";
-            document.getElementById("hakari").src = "./assets/weopon.jpg";
+            document.getElementById("hakari").src = "./assets/weopon.png";
             document.getElementById("one").style.display = "none";
             document.getElementById("two").style.display = "none";
             document.getElementById("x").style.display = "none";
@@ -138,13 +138,13 @@ function setup(){
         document.getElementById("one").onclick = function(){
             document.getElementById("two").style.textDecoration = "none";
             document.getElementById("one").style.textDecoration = "underline";
-            document.getElementById("hakari").src = "./assets/weopon.jpg";
+            document.getElementById("hakari").src = "./assets/weopon.png";
        }
 
         document.getElementById("two").onclick = function(){
             document.getElementById("one").style.textDecoration = "none";
             document.getElementById("two").style.textDecoration = "underline";
-            document.getElementById("hakari").src = "./assets/judgeman.jpg";
+            document.getElementById("hakari").src = "./assets/judgeman.png";
         }
     }
     if(storedIndex == 6){
