@@ -1,10 +1,7 @@
 import {sorcerer} from "./data.js";
 
 function main(){
- //   document.getElementById("x").onclick = function(){
- //       document.getElementById("pop-up").style.display = "none";   
-//}
-
+    
 document.getElementById("darkmode").addEventListener ('click', function () {
     document.body.classList.toggle("dark-theme");
 
@@ -20,7 +17,6 @@ background();
 charaterSlide();
 powerSlide();
 nameSlide();
-
 }
 
 function powerSlide(){
@@ -44,6 +40,22 @@ function powerSlide(){
         data = '<h1 id="sorcerer' + currentIndex + '">' + sorcerer[currentIndex].name + '</h1>';
         document.getElementById("domain").innerHTML = data;
     }
+
+    document.addEventListener("wheel", handleScroll);
+    
+    function handleScroll(event) {
+ 
+    if (event.deltaY > 0) {
+       
+        currentIndex = (currentIndex + 1) % sorcerer.length;
+        update();
+    } else {
+     
+        currentIndex = (currentIndex - 1 + sorcerer.length) % sorcerer.length;
+        update();
+    }
+
+}
    
     document.getElementById("domain").innerHTML = data;
 }
@@ -51,6 +63,8 @@ function powerSlide(){
 function nameSlide(){
     let data = '';
     let currentIndex = 0;
+    
+ 
 
     data = '<a id="name' + currentIndex + '">' + sorcerer[currentIndex].user + '</a>';
   
@@ -98,6 +112,22 @@ function nameSlide(){
         }, 2700);
     };
     }
+
+    document.addEventListener("wheel", handleScroll);
+    
+    function handleScroll(event) {
+ 
+    if (event.deltaY > 0) {
+       
+        currentIndex = (currentIndex + 1) % sorcerer.length;
+        update();
+    } else {
+     
+        currentIndex = (currentIndex - 1 + sorcerer.length) % sorcerer.length;
+        update();
+    }
+
+}
    
     document.getElementById("name").innerHTML = data;
 
@@ -127,8 +157,7 @@ function nameSlide(){
                 setTimeout(function(){
                   window.location.href = "./info.html";
                 }, 2700);
-            };    
-            
+            };             
 function color(){
 
                 switch (true) {
@@ -202,6 +231,21 @@ function background(){
     saveIndexToLocalStorage();
     document.getElementById("background-domain").src =  sorcerer[currentIndex].back;
 
+    document.addEventListener("wheel", handleScroll);
+    
+    function handleScroll(event) {
+ 
+    if (event.deltaY > 0) {
+       
+        currentIndex = (currentIndex + 1) % sorcerer.length;
+        update();
+    } else {
+     
+        currentIndex = (currentIndex - 1 + sorcerer.length) % sorcerer.length;
+        update();
+    }
+
+}
    
 }
 
@@ -232,9 +276,23 @@ function charaterSlide(){
     document.getElementById("sorcerer-image2").src = sorcerer[currentIndex].userimage ;
     document.getElementById("sorcerer-image3").src = sorcerer[currentIndex + 1].userimage ;
     document.getElementById("sorcerer-image4").src = sorcerer[currentIndex + 2].userimage ;
+
+    document.addEventListener("wheel", handleScroll);
+    
+    function handleScroll(event) {
+ 
+    if (event.deltaY > 0) {
+       
+        currentIndex = (currentIndex + 1) % sorcerer.length;
+        update();
+    } else {
+     
+        currentIndex = (currentIndex - 1 + sorcerer.length) % sorcerer.length;
+        update();
+    }
+
 }
-
-
+}
  
 main();
 

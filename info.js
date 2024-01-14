@@ -7,6 +7,7 @@ function main(){
 
     color();
     setup();
+
 }
 
 function setup(){

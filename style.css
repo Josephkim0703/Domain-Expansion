@@ -315,6 +315,11 @@ ul{
 font-size: 3.5rem;
 }
 
+#name a:hover{
+    color: aqua;
+    transition: 0.5s;
+}
+
 @keyframes moveLeftToRight {
     0% {
         transform: translateX(0.6rem) scaleX(-1);
