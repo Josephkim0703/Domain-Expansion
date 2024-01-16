@@ -176,7 +176,7 @@ main p{
     font-size: 1.5rem;
     position: absolute;
     z-index: 10;
-    top: 49.5rem;
+    top: 48.5rem;
     left: -1.1rem;
     display: none;
     color: white;
@@ -193,7 +193,7 @@ main p{
     font-size: 1.5rem;
     position: absolute;
     z-index: 10;
-    top: 49.5rem;
+    top: 48.5rem;
     left: 1.1rem;
     display: none;
     color: white;
@@ -248,6 +248,17 @@ color: rgb(119, 119, 119);
 }
 
 @media only screen and (max-height: 950px){
+
+    main{
+        z-index: 1;
+        position: absolute;
+        top: 32rem;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+    }
+
+    
     body{
         overflow-y: scroll;
     }
@@ -265,3 +276,94 @@ color: rgb(119, 119, 119);
         opacity: 1;
     }
 }
+
+@media only screen and (max-width: 1860px){
+    #user{
+        width: 50rem;
+    }
+    
+    #left{
+    margin-right: -60px;
+    }
+    
+    #right{
+    margin-left: -60px;
+    }
+
+    
+    main h1{ 
+    color: white;
+    width: 33rem;
+    font-size: 2rem;
+    font-family: 'Times New Roman';
+    margin: 0rem 21rem ;
+    text-shadow: 1px 1px 0px rgb(0, 0, 0), 0 0 0.1em rgb(0, 0, 0);
+    }
+
+    main p{
+    color: white;
+    font-size: 1.2rem;
+    width: 40rem;
+    text-align: start;
+    margin-bottom: 0rem;
+    margin-top: 10px;
+    text-shadow: 1.1px 1.1px 0px rgb(0, 0, 0), 0 0 0.2em rgb(0, 0, 0);
+    }
+
+    #appearance{
+        transform: translateY(-20.5rem)
+    }
+
+    #hand{
+        top: 35.2rem;
+        left: 39.5rem;
+        position: absolute;
+        border: 3px solid white;
+        border-radius: 2rem;
+        width: 15rem;
+    }
+
+    #past{
+        display: none;
+        top: 39rem;
+        left: 90rem;
+        position: absolute;
+        border: 3px solid black;
+        border-radius: 2rem;
+        width: 30rem; 
+        height: 10rem; 
+    }
+    
+    #true{
+        display: none;
+        top: 17rem;
+        left: 86.5rem;
+        position: absolute;
+        border: 3px solid black;
+        border-radius: 2rem;
+        width: 15rem; 
+        height: 12rem; 
+    }
+
+    #hakari{
+        top: 32.5rem;
+        left: 15.5rem;
+    }
+    
+
+    #x{
+        top: 1rem;
+        left: -21rem;
+    }
+    
+    #one{
+        top: 46.5rem;
+        left: 0rem;
+    }
+    
+    #two{
+        top: 46.5rem;
+        left: 2rem;
+    }
+}
+
