@@ -29,12 +29,10 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     background-size: cover;
-    width: auto;
-    height: 100%;
-    min-width: 1920px;
-    min-height: 970px;
+    width: 1920px;
+    height: auto;
     z-index: -2;
     margin: 0;
     padding: 0;
@@ -252,28 +250,26 @@ color: rgb(119, 119, 119);
     main{
         z-index: 1;
         position: absolute;
-        top: 32rem;
+        top: 30rem;
         left: 50%;
         transform: translate(-50%, -50%);
 
     }
-
     
-    body{
-        overflow-y: scroll;
+    #background-domain{
+        width: 1920px;
+        height: auto;
+
     }
 
-    ::-webkit-scrollbar {
-        width: 12px;
-        display: block;
-        border-left:  1.5px solid black;
-    }
-      
-    ::-webkit-scrollbar-thumb {
-        background: rgb(111, 228, 228); 
-        border-radius: 5rem;
-        border: 1.5px solid black;
-        opacity: 1;
+   
+}
+
+@media only screen and (min-width:1920px){
+    #background-domain{
+        width: 100%;
+        height: auto;
+
     }
 }
 
