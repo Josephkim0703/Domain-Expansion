@@ -223,18 +223,6 @@ a{
     outline: none;
 }
 
-#arrows1{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 35rem;
-    position: absolute;
-    top: -15.6rem;
-    left: 40%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-}
-
 #arrows1 button{
     color: white;
     font-size: 3rem;
@@ -271,7 +259,7 @@ ul img{
     border: 1px solid aqua(52, 52, 219);
     position: absolute;
     top: 28.2rem;
-    left: 50%;
+    left: 51%;
     z-index: -1;
     transform: translate(-50%, -50%);
     border-radius: 50%;
@@ -324,6 +312,47 @@ font-size: 3.5rem;
 #name a:hover{
     color: aqua;
     transition: 0.5s;
+}
+
+#sorcerer-image{
+    width: 15rem; 
+    height: 15rem; 
+    filter: brightness(35%); 
+    transform: translate(0, 60%); 
+    margin: 0rem 4rem
+}
+
+#sorcerer-image1{
+    width: 25rem; 
+    height: 25rem; 
+    filter: brightness(60%); 
+    transform: translate(0, 20%)
+}
+
+#sorcerer-image2{
+    width: 35rem; 
+    height: 35rem; 
+    filter: brightness(1)
+}
+
+#sorcerer-image3{
+    width: 25rem; 
+    height: 25rem; 
+    filter: brightness(60%);
+    transform: translate(0, 20%)
+}
+
+#sorcerer-image4{
+    width: 15rem;
+    height: 15rem; 
+    filter: brightness(35%);  
+    transform: translate(0, 60%); 
+    margin: 0rem 4rem ;
+}
+#base2{
+    width:35rem; 
+    transform: translate(-7px, 18.5rem); 
+    filter: hue-rotate(0.4turn);
 }
 
 @keyframes moveLeftToRight {
@@ -401,3 +430,130 @@ header{
 }
 
 }
+
+@media only screen and (max-width: 1700px) {
+    #sorcerer-image{
+
+        display: none;
+    }
+   
+    #sorcerer-image4{
+
+        display: none;
+    }
+    #base0{
+
+        display: none;
+    }
+    #base4{
+
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 1100px) {
+  
+    #sorcerer-image1{
+
+        display: none;
+    }
+    #sorcerer-image3{
+
+        display: none;
+    }
+
+    #base1{
+
+        display: none;
+    }
+    #base3{
+
+        display: none;
+    }
+
+    #shadow{
+        left: 53.5%;
+    }
+
+}
+
+@media only screen and (max-width: 700px) {
+    #arrows{
+        width: 34rem;
+        top: 3rem;
+
+    }
+    #title{
+        top: -15rem;
+        font-size:  3.5rem;
+    }
+    
+    #title1{
+        top: -15.5rem;
+        font-size:  4.5rem;
+    }
+    #domain{
+        color: white;
+        position: absolute;
+        top: 28.5rem;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 30rem;
+        font-size: 1.6rem;
+        font-family: "pixel",'Times New Roman';
+        -webkit-text-stroke: black;
+        -webkit-text-stroke-width: 1px;
+    }
+    
+    #name a{
+        font-size: 3.5rem;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    #arrows{
+        width: 28rem;
+        top: 6rem;
+
+    }
+    #title{
+        top: -13rem;
+        font-size:  3rem;
+    }
+    
+    #title1{
+        top: -13.5rem;
+        font-size:  4rem;
+    }
+    #domain{
+        top: 27rem;
+        width: 28rem;
+        font-size: 1.5rem;
+    }
+    
+    #name a{
+        top: -12.5rem;
+        font-size: 3rem;
+    }
+
+    #sorcerer-image2{
+        height: 28rem;
+        width: 28rem;
+        margin-left: -60px;
+    }
+
+    #base2{
+        width:30rem; 
+        transform: translate(-20px, 15.5rem); 
+        filter: hue-rotate(0.4turn);
+    }
+
+    #shadow{
+        top: 23.5rem;
+        width: 23.6rem;
+        height: 7rem;
+        left: 51.5%;
+    }
+}
+
