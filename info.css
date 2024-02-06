@@ -21,7 +21,7 @@
 body{
     margin: 0;
     padding:0;
-    overflow: hidden;
+    overflow: auto;
 }
 
 #background-domain{
@@ -29,17 +29,17 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    background-repeat: no-repeat;
+    background-repeat:no-repeat;
     background-size: cover;
-    width: 1920px;
+    width: 100%;
     height: auto;
     z-index: -2;
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
 }
 
 header{
-
+    z-index: 10;
     margin-top: 1rem;
     display: flex;
     flex-direction: row;
@@ -51,7 +51,8 @@ header{
     margin: 0rem 0rem 0rem 1.5rem;
     font-size: 2rem;
     transition: 0.4s;
-    color: black;
+    color: white;
+    text-shadow: 0px 0px 10px black;
 
 }
 
@@ -59,13 +60,19 @@ header{
     text-shadow: 0px 0px 10px rgb(255, 0, 0);
 }
 
+#domain{
+    margin: 0px;
+}
+
+
+
 a{
     text-decoration: none;
     color: black;
 }
 
 main{
-    z-index: 1;
+    z-index: -1;
     position: absolute;
     top: 52vh;
     left: 50%;
@@ -75,6 +82,7 @@ main{
 }
 
 #user{
+    z-index: -1;
     width: 55rem;
     display: block;
     position: absolute;
@@ -84,6 +92,7 @@ main{
 }
 
 #left{
+  
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -91,6 +100,7 @@ main{
 }
 
 #right{
+    margin-left: 34rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -116,9 +126,10 @@ main p{
     text-shadow: 1.1px 1.1px 0px rgb(0, 0, 0), 0 0 0.2em rgb(0, 0, 0);
 }
 
+
 #appearance{
     top: 39.5rem;
-    left: 18rem;
+    left: 0rem;
     position: absolute;
     border: 3px solid white;
     border-radius: 2rem;
@@ -126,87 +137,7 @@ main p{
     transform: translateY(-16.5rem)
 }
 
-#hakari{
-    top: 34.5rem;
-    left: 14.5rem;
-    position: absolute;
-    border: 2px solid orange;
-    border-radius: 2rem;
-    width: 20rem;
-    height: 18rem;
-    transform: translate(-7px,-16.5rem);
-    display: block;
-    transition: 0.4s;
-    cursor: pointer;
-}
 
-#hakari:hover{
-    border: 2px solid rgb(0, 38, 255);
-}
-
-#button{
-    border: 0px;
-    background-color: transparent;
-    display: none;
-}
-
-#x{
-    width: 2rem;
-    height: 2rem;
-    border: 2px solid black;
-    border-radius: 50%;
-    font-weight: 900;
-    font-size: 1rem;
-    position: absolute;
-    z-index: 10;
-    top: 3rem;
-    left: -22rem;
-    display: none;
-}
-
-#one{
-    text-decoration: underline;
-    width: 2rem;
-    height: 2rem;
-    border: 0px;
-    background-color: transparent;
-    border-radius: 50%;
-    font-weight: 900;
-    font-size: 1.5rem;
-    position: absolute;
-    z-index: 10;
-    top: 48.5rem;
-    left: -1.1rem;
-    display: none;
-    color: white;
-    text-shadow: 1.5px 1.5px 0px rgb(0, 0, 0), 0 0 0.1em rgb(0, 0, 0);
-}
-
-#two{
-    width: 2rem;
-    height: 2rem;
-    border: 0px;
-    background-color: transparent;
-    border-radius: 50%;
-    font-weight: 900;
-    font-size: 1.5rem;
-    position: absolute;
-    z-index: 10;
-    top: 48.5rem;
-    left: 1.1rem;
-    display: none;
-    color: white;
-    text-shadow: 1.5px 1.5px 0px rgb(0, 0, 0), 0 0 0.1em rgb(0, 0, 0);
-}
-
-#x:hover{
-background-color: rgb(170, 170, 170)
-}
-
-#one:hover, #two:hover{
-color: rgb(119, 119, 119);
-;
-}
 
 #right video{
     margin: 2rem 0rem 0rem -21.5rem;   
@@ -217,7 +148,7 @@ color: rgb(119, 119, 119);
 
 #hand{
     top: 39.7rem;
-    left: 39.5rem;
+    left: 22.5rem;
     position: absolute;
     border: 3px solid white;
     border-radius: 2rem;
@@ -226,8 +157,8 @@ color: rgb(119, 119, 119);
 
 #past{
     display: none;
-    top: 42rem;
-    left: 96rem;
+    top: 40.5rem;
+    left: 78rem;
     position: absolute;
     border: 3px solid black;
     border-radius: 2rem;
@@ -238,7 +169,7 @@ color: rgb(119, 119, 119);
 #true{
     display: none;
     top: 18rem;
-    left: 92.5rem;
+    left: 74rem;
     position: absolute;
     border: 3px solid black;
     border-radius: 2rem;
@@ -246,10 +177,32 @@ color: rgb(119, 119, 119);
     height: 15rem; 
 }
 
+#pain{
+    display: none;
+    top: 18.5rem;
+    left: 74.5rem;
+    position: absolute;
+    border: 3px solid black;
+    border-radius: 2rem;
+    width: 16.5rem; 
+    height: 12.5rem; 
+}
+
+#pain1{
+    display: none;
+    top: 16.5rem;
+    left: 74rem;
+    position: absolute;
+    border: 3px solid black;
+    border-radius: 2rem;
+    width: 16.5rem; 
+    height: 16.5rem; 
+}
+
 @media only screen and (max-height: 950px){
 
     main{
-        z-index: 1;
+ 
         position: absolute;
         top: 30rem;
         left: 50%;
@@ -275,18 +228,41 @@ color: rgb(119, 119, 119);
 }
 
 @media only screen and (max-width: 1860px){
+
+    #pain1{
+
+        top: 15.5rem;
+        left: 67rem;
+
+    }
+
+    #pain{
+        top: 16.5rem;
+    left: 67.5rem;
+
+    }
+
+    #right{
+        margin-left: 27rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 2;
+    }
+
+    main{
+ 
+        position: absolute;
+        top: 52vh;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        display: flex;
+    }
+
     #user{
         width: 50rem;
     }
-    
-    #left{
-    margin-right: -60px;
-    }
-    
-    #right{
-    margin-left: -60px;
-    }
-
     
     main h1{ 
     color: white;
@@ -308,43 +284,33 @@ color: rgb(119, 119, 119);
     }
 
     #appearance{
-        transform: translateY(-20.5rem)
+        transform: translateY(-20rem)
     }
 
     #hand{
-        top: 35.2rem;
-        left: 39.5rem;
-        position: absolute;
-        border: 3px solid white;
-        border-radius: 2rem;
-        width: 15rem;
+        top: 36rem;
     }
 
     #past{
         display: none;
-        top: 39rem;
-        left: 90rem;
-        position: absolute;
-        border: 3px solid black;
-        border-radius: 2rem;
+        top: 38rem;
+        left: 80rem;
         width: 30rem; 
         height: 10rem; 
     }
     
     #true{
-        display: none;
+   
         top: 17rem;
-        left: 86.5rem;
-        position: absolute;
-        border: 3px solid black;
-        border-radius: 2rem;
+        left: 74.5rem;
+ 
         width: 15rem; 
         height: 12rem; 
     }
 
     #hakari{
         top: 32.5rem;
-        left: 15.5rem;
+        left: 61.5rem;
     }
     
 
@@ -362,5 +328,124 @@ color: rgb(119, 119, 119);
         top: 46.5rem;
         left: 2rem;
     }
+}
+
+@media only screen and (max-width:1740px){
+
+    #user{
+        width: 40rem;
+        top:  21rem;
+
+    }
+
+    #true{
+        display: none;
+        top: 46%;
+        left: 60%;
+        transform: translate(-50%, -50%) ;
+        position: absolute;
+        border: 3px solid black;
+        border-radius: 2rem;
+        width: 15rem; 
+        height: 13rem; 
+    }
+    
+    main{
+    position: absolute;
+    top: 117%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: flex;
+}
+
+
+    
+    #right{
+        margin-left: 1rem;
+    }
+
+
+    #background-domain{
+        top: 80%;
+        width: 2540px;
+        height: 1600px;
+    }
+    #past{
+
+        left: 45rem;
+
+    }
+
+    #pain{
+ 
+    left: 41.5rem;
+
+    }
+
+    
+    #pain1{
+
+        left: 41rem;
+
+    }
+
+}
+
+@media only screen and (max-width:1340px){
+
+    #pain{
+        top: 66%;
+        left: 1.5rem;
+
+    }
+
+
+    #pain1{
+        top: 67.7%;
+        left: 1rem;
+
+    }
+
+
+    main{
+top: 92rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#left{
+    margin-bottom: 20px;
+}
+
+#hakari{
+ top: 81.5%;
+    left: 1.5rem;
+
+}
+
+
+    #background-domain{
+        top: 120%;
+        width: 4200px;
+        height: 2370px;
+    }
+
+    #past{
+        top: -12%;
+        left: 8rem;
+        height: 9rem;
+        width: 25rem;
+
+    }
+
+    #true{
+        top: 77%;
+        left: 22%;
+    }
+}
+
+@media only screen and (min-width: 670px){
+
 }
 

@@ -189,12 +189,12 @@ a{
 
 #title1{
     position: absolute;
-    top: -18rem;
+    top: -17rem;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 70rem;
     font-family:'pixel','Times New Roman';
-    font-size:  7rem;
+    font-size:  5.5rem;
     color: rgb(189, 0, 0);
     -webkit-text-stroke:rgb(0, 0, 0);
     -webkit-text-stroke-width: 1px;
