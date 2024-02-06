@@ -30,8 +30,6 @@ body{
     background-size: cover;
     width: 100%;
     height: auto;
-    min-width: 1920px;
-    min-height: 1080px;
     z-index: -1;
     margin: 0;
     padding: 0;
@@ -46,8 +44,6 @@ body{
     background-size: cover;
     width: 100%;
     height: auto;
-    min-width: 1920px;
-    min-height: 1080px;
     z-index: -2;
     margin: 0;
     padding: 0;
@@ -563,6 +559,7 @@ header{
         overflow: hidden;
     }
 }
+
 @media only screen and (max-width: 490px) {
     #arrows{
         width: 25rem;
