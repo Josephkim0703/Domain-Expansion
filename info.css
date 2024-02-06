@@ -190,13 +190,24 @@ main p{
 
 #pain1{
     display: none;
-    top: 16.5rem;
+    top: 18rem;
     left: 74rem;
     position: absolute;
     border: 3px solid black;
     border-radius: 2rem;
     width: 16.5rem; 
     height: 16.5rem; 
+}
+
+#pain2{
+    display: none;
+    top: 42%;
+    left: 74rem;
+    position: absolute;
+    border: 3px solid black;
+    border-radius: 2rem;
+    width: 16.5rem; 
+    height: 12.5rem; 
 }
 
 @media only screen and (max-height: 950px){
@@ -229,9 +240,17 @@ main p{
 
 @media only screen and (max-width: 1860px){
 
+    #pain2{
+
+        top: 41.5%;
+        left: 67.5rem;
+        width: 16rem; 
+        height: 12rem; 
+    }
+
     #pain1{
 
-        top: 15.5rem;
+        top: 17rem;
         left: 67rem;
 
     }
@@ -332,6 +351,13 @@ main p{
 
 @media only screen and (max-width:1740px){
 
+    #pain2{
+
+        top: 41.5%;
+        left: 41.5rem;
+  
+    }
+
     #user{
         width: 40rem;
         top:  21rem;
@@ -385,7 +411,7 @@ main p{
 
     
     #pain1{
-
+       top: 32%;
         left: 41rem;
 
     }
@@ -393,6 +419,12 @@ main p{
 }
 
 @media only screen and (max-width:1340px){
+    #pain2{
+
+        top: 83%;
+        left: 1.5rem;
+  
+    }
 
     #pain{
         top: 66%;
@@ -426,9 +458,9 @@ top: 92rem;
 
 
     #background-domain{
-        top: 120%;
+        top: 115%;
         width: 4200px;
-        height: 2370px;
+        height: 2450px;
     }
 
     #past{

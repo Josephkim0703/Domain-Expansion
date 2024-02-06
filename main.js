@@ -264,15 +264,15 @@ function charaterSlide(){
     });
     
     function update() {  
-        document.getElementById("sorcerer-image").src =  sorcerer[(currentIndex + 10) % sorcerer.length].userimage;
-        document.getElementById("sorcerer-image1").src = sorcerer[(currentIndex + 11) % sorcerer.length].userimage ;
+        document.getElementById("sorcerer-image").src =  sorcerer[(currentIndex + 11) % sorcerer.length].userimage;
+        document.getElementById("sorcerer-image1").src = sorcerer[(currentIndex + 12) % sorcerer.length].userimage ;
         document.getElementById("sorcerer-image2").src = sorcerer[currentIndex].userimage ;
         document.getElementById("sorcerer-image3").src = sorcerer[(currentIndex + 1)% sorcerer.length].userimage ;
         document.getElementById("sorcerer-image4").src = sorcerer[(currentIndex + 2)% sorcerer.length].userimage ;
     }
    
-    document.getElementById("sorcerer-image").src = sorcerer[currentIndex + 10].userimage;
-    document.getElementById("sorcerer-image1").src = sorcerer[currentIndex + 11].userimage ;
+    document.getElementById("sorcerer-image").src = sorcerer[currentIndex + 11].userimage;
+    document.getElementById("sorcerer-image1").src = sorcerer[currentIndex + 12].userimage ;
     document.getElementById("sorcerer-image2").src = sorcerer[currentIndex].userimage ;
     document.getElementById("sorcerer-image3").src = sorcerer[currentIndex + 1].userimage ;
     document.getElementById("sorcerer-image4").src = sorcerer[currentIndex + 2].userimage ;

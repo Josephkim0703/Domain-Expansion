@@ -27,9 +27,7 @@ function setup(){
     document.getElementById("hand").src = sorcerer[storedIndex].hand;
 
     //hakari's data
-   
-
-    if(storedIndex == 4){
+    if(storedIndex == 5){
 
         document.getElementById("appearance").style.transform = "translateY("+ -19 +"rem)";
         document.getElementById("hand").style.transform = "translateY("+ 0.5 +"rem)";
@@ -44,12 +42,10 @@ function setup(){
         document.getElementById("hand").style.border = 3 +"px solid black";
 
         document.getElementById("domain-vid").style.visibility = "hidden";
-        }
-    
-
-    
+    }
+ 
     //higuruma's data
-    if(storedIndex == 5){
+    if(storedIndex == 6){
 
             
             document.getElementById("pain").style.display = "block";
@@ -59,10 +55,9 @@ function setup(){
             document.getElementById("hand").style.border = 3 +"px solid black";
 
             document.getElementById("domain-vid").style.visibility = "hidden";
-}
-    
-    
-    if(storedIndex == 6){
+    }
+    //kenjaku's data
+    if(storedIndex == 7){
         document.getElementById("domain-vid").style.visibility = "hidden";
         document.getElementById("appearance").style.border = 3 +"px solid black";
         document.getElementById("hand").style.border = 3 +"px solid black";
@@ -70,12 +65,21 @@ function setup(){
         document.getElementById("past").src = sorcerer[storedIndex].former;
         document.getElementById("past").style.display = "block";
     }
-    if(storedIndex == 7){      
+    //yoruzu's data
+    if(storedIndex == 8){      
         document.getElementById("domain-vid").style.visibility = "hidden";
         document.getElementById("appearance").style.border = 3 +"px solid black";
         document.getElementById("hand").style.border = 3 +"px solid black";
         document.getElementById("true").style.display = "block";
         document.getElementById("true").src = sorcerer[storedIndex].true;
+    }
+
+    if(storedIndex == 2){      
+        document.getElementById("domain-vid").style.visibility = "hidden";
+        document.getElementById("appearance").style.border = 3 +"px solid black";
+        document.getElementById("hand").style.border = 3 +"px solid black";
+        document.getElementById("pain2").style.display = "block";
+        document.getElementById("pain2").src = sorcerer[storedIndex].true;
     }
 }
 
