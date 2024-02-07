@@ -34,7 +34,8 @@ main{
     left: 50%;
     transform: translate(-50%, -50%);
     background-repeat:no-repeat; 
-    background-size: cover; 
+    width: 100%;
+    height: 100%;
     z-index: -1;
     margin: 0;
     padding: 0;
@@ -46,7 +47,8 @@ main{
     left: 50%;
     transform: translate(-50%,-50%);
     background-repeat:no-repeat;
-    background-size: cover;
+    width: 100%;
+    height: 100%;
     z-index: -2;
     margin: 0;
     padding: 0;
@@ -570,7 +572,7 @@ header{
  
 }
 
-@media only screen and (max-width: 490px) {
+@media only screen and (max-width: 500px) {
     #arrows{
         width: 25rem;
         top: 6rem;
@@ -586,14 +588,18 @@ header{
         font-size:  3rem;
     }
     #domain{
-        top: 25rem;
+        top: 20rem;
         width: 28rem;
         font-size: 1.4rem;
     }
     
     #name a{
-        top: -12.5rem;
+        top: -14.5rem;
         font-size: 2.8rem;
+    }
+
+    ul{ 
+        transform: translate(-51%, -65%);
     }
 
     #sorcerer-image2{
@@ -602,16 +608,17 @@ header{
 
     #base2{
         width:25rem; 
-        transform: translate(-20px, 12rem); 
+        transform: translate(-20px, 10.5rem); 
         filter: hue-rotate(0.4turn);
     }
 
     #shadow{
-        top: 17.5rem;
+        top: 16.5rem;
         width: 20.6rem;
-        height: 3rem;
+        height: 4rem;
         left: 50%;
     }
+    
 
 }
 
