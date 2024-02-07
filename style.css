@@ -25,12 +25,12 @@ main{
 #background{
     filter: hue-rotate(0);
     position: absolute;
-    top:50%;
+    top:40%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-repeat:no-repeat;
-    background-size:cover;
-
+    
+    background-size: cover;
 
     z-index: -1;
     margin: 0;
@@ -585,7 +585,7 @@ header{
         font-size:  3rem;
     }
     #domain{
-        top: 27rem;
+        top: 25rem;
         width: 28rem;
         font-size: 1.4rem;
     }
@@ -596,25 +596,21 @@ header{
     }
 
     #sorcerer-image2{
-        height: 27rem;
-        width: 27rem;
-        margin-left: -70px;
+        height: 25rem;
     }
 
     #base2{
-        width:30rem; 
-        transform: translate(-20px, 15.5rem); 
+        width:25rem; 
+        transform: translate(-20px, 12rem); 
         filter: hue-rotate(0.4turn);
     }
 
     #shadow{
-        top: 23.5rem;
-        width: 23.6rem;
-        height: 7rem;
-        left: 51.5%;
+        top: 17.5rem;
+        width: 20.6rem;
+        height: 3rem;
+        left: 50%;
     }
-    html{
-        overflow: hidden;
-    }
+
 }
 
