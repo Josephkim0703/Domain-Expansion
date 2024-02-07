@@ -578,6 +578,12 @@ header{
 }
 
 @media only screen and (max-width: 490px) {
+    #background-domain{
+        transform: translate(-50%, -125%);
+    }
+    #background{
+        transform: translate(-50%, -20%);
+    }
     #arrows{
         width: 25rem;
         top: -1rem;
