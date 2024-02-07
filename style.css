@@ -44,8 +44,6 @@ main{
     transform: translate(-50%,-50%);
     background-repeat:no-repeat;
     background-size: cover;
-    width: 100%;
-    height: auto;
 
     z-index: -2;
     margin: 0;
