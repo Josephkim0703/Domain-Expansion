@@ -572,7 +572,7 @@ header{
  
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 490px) {
     #arrows{
         width: 25rem;
         top: -1rem;
@@ -581,22 +581,26 @@ header{
     #title{
         top: -14rem;
         font-size:  2.5rem;
+        width: 23rem;
     }
     
     #title1{
         top: -14.5rem;
         font-size:  3rem;
+        width: 23rem;
     }
     
     #domain{
         top: 16rem;
         width: 28rem;
-        font-size: 1.4rem;
+        font-size: 1.3rem;
+        width: 22rem;
     }
     
     #name a{
         top: -16rem;
         font-size: 2.8rem;
+        width: 23rem;
     }
 
     ul{ 
@@ -618,6 +622,60 @@ header{
         width: 20.6rem;
         height: 4rem;
         left: 50%;
+    }
+    
+
+}
+
+@media only screen and (max-width: 410px) {
+    #arrows{
+        width: 22rem;
+        top: -4rem;
+
+    }
+    #title{
+        top: -14rem;
+        font-size:  2.5rem;
+        width: 20rem;
+    }
+    
+    #title1{
+        top: -14.5rem;
+        font-size:  2.5rem;
+        width: 23rem;
+    }
+    
+    #domain{
+        top: 11.5rem;
+        font-size: 1.3rem;
+        width: 21rem;
+    }
+    
+    #name a{
+        top: -15rem;
+        font-size: 2.5rem;
+        width: 23rem;
+    }
+
+    ul{ 
+        transform: translate(-51%, -90%);
+    }
+
+    #sorcerer-image2{
+        height: 20rem;
+    }
+
+    #base2{
+        width:20rem; 
+        transform: translate(-15px, 5.5rem); 
+        filter: hue-rotate(0.4turn);
+    }
+
+    #shadow{
+        top: 10rem;
+        width: 15.6rem;
+        height: 4rem;
+        left: 51%;
     }
     
 
