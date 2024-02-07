@@ -8,15 +8,14 @@
     src: url(./assets/dpcomic.ttf);
 }
 
-html{
-    overflow: hidden;
-}
+
 
 body{
     margin: 0;
     padding:0;
     display: flex;
-    flex-direction: column;
+    flex-direction: column;  
+    overflow: hidden;
 }
 
 main{
@@ -30,11 +29,9 @@ main{
     left: 50%;
     transform: translate(-50%, -50%);
     background-repeat:no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: auto;
-    min-width: 1920px;
-    min-height: 1080px;
+    background-size:cover;
+
+
     z-index: -1;
     margin: 0;
     padding: 0;
@@ -49,8 +46,7 @@ main{
     background-size: cover;
     width: 100%;
     height: auto;
-    min-width: 1920px;
-    min-height: 1080px;
+
     z-index: -2;
     margin: 0;
     padding: 0;
@@ -184,7 +180,7 @@ a{
     -webkit-text-stroke:rgb(0, 0, 0);
     -webkit-text-stroke-width: 1px;
     transition: 0.2s;
-    min-width: 40rem;
+    width: 40rem;
 }
 
 #title1{
@@ -192,7 +188,7 @@ a{
     top: -17rem;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 70rem;
+    width: 40rem;
     font-family:'pixel','Times New Roman';
     font-size:  5.5rem;
     color: rgb(189, 0, 0);
@@ -258,14 +254,14 @@ a{
 }
 
 ul img{
-    margin: 0rem -2.5rem;
+    margin: 0rem 1.5rem;
     transition: 0.4s;
 }
 
 #shadow{
     border: 1px solid aqua(52, 52, 219);
     position: absolute;
-    top: 28.2rem;
+    top: 24.5rem;
     left: 51%;
     z-index: -1;
     transform: translate(-50%, -50%);
@@ -276,11 +272,15 @@ ul img{
     filter: blur(15px);
 }
 
+#stand img{
+    margin: 0rem -1.7rem;
+}
+
 ul{ 
     position: absolute;
     top: 3.5rem;
-    left: 47.5%;
-    transform: translate(-50%, -50%);
+    left: 50%;
+    transform: translate(-51%, -50%);
     display: flex;
     flex-direction: row;
 }
@@ -296,6 +296,10 @@ ul{
     font-family: "pixel",'Times New Roman';
     -webkit-text-stroke: black;
     -webkit-text-stroke-width: 1px;
+}
+
+#domain h1{
+    margin: 0px;
 }
 
 #name a{
@@ -322,43 +326,36 @@ font-size: 3.5rem;
 }
 
 #sorcerer-image{
-    width: 15rem; 
     height: 15rem; 
     filter: brightness(35%); 
     transform: translate(0, 60%); 
-    margin: 0rem 4rem
 }
 
 #sorcerer-image1{
-    width: 25rem; 
     height: 25rem; 
     filter: brightness(60%); 
     transform: translate(0, 20%)
 }
 
 #sorcerer-image2{
-    width: 35rem; 
     height: 35rem; 
     filter: brightness(1)
 }
 
 #sorcerer-image3{
-    width: 25rem; 
     height: 25rem; 
     filter: brightness(60%);
     transform: translate(0, 20%)
 }
 
 #sorcerer-image4{
-    width: 15rem;
-    height: 15rem; 
+    height: 15rem;
     filter: brightness(35%);  
     transform: translate(0, 60%); 
-    margin: 0rem 4rem ;
 }
 #base2{
     width:35rem; 
-    transform: translate(-7px, 18.5rem); 
+    transform: translate(-7px, 16.5rem); 
     filter: hue-rotate(0.4turn);
 }
 
@@ -456,10 +453,13 @@ header{
 
         display: none;
     }
+    ul{ 
+        transform: translate(-51.4%, -50%);   
+    }
 
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1190px) {
   
     #sorcerer-image1{
 
@@ -482,6 +482,9 @@ header{
     #shadow{
         left: 53.5%;
     }
+    ul{ 
+        transform: translate(-53.4%, -50%);   
+    }
 
 }
 
@@ -494,11 +497,13 @@ header{
     #title{
         top: -15rem;
         font-size:  3.5rem;
+        width: 31rem;
     }
     
     #title1{
         top: -15.5rem;
         font-size:  4.5rem;
+        width: 31rem;
     }
     #domain{
         color: white;
@@ -518,7 +523,7 @@ header{
     }
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 570px) {
     #arrows{
         width: 28rem;
         top: 6rem;
@@ -546,25 +551,22 @@ header{
 
     #sorcerer-image2{
         height: 28rem;
-        width: 28rem;
-        margin-left: -60px;
+        margin-left: -1px;
     }
 
     #base2{
         width:30rem; 
-        transform: translate(-20px, 15.5rem); 
+        transform: translate(-20px, 13.5rem); 
         filter: hue-rotate(0.4turn);
     }
 
     #shadow{
-        top: 23.5rem;
-        width: 23.6rem;
-        height: 7rem;
+        top: 20.5rem;
+        width: 22.6rem;
+        height: 5rem;
         left: 51.5%;
     }
-    html{
-        overflow: hidden;
-    }
+ 
 }
 
 @media only screen and (max-width: 490px) {
