@@ -24,7 +24,7 @@ main{
 }
 
 #container{
-    overflow: hidden;
+    overflow: show;
 }
 
 #background{
@@ -575,31 +575,32 @@ header{
 @media only screen and (max-width: 500px) {
     #arrows{
         width: 25rem;
-        top: 6rem;
+        top: -1rem;
 
     }
     #title{
-        top: -13rem;
+        top: -14rem;
         font-size:  2.5rem;
     }
     
     #title1{
-        top: -13.5rem;
+        top: -14.5rem;
         font-size:  3rem;
     }
+    
     #domain{
-        top: 20rem;
+        top: 16rem;
         width: 28rem;
         font-size: 1.4rem;
     }
     
     #name a{
-        top: -14.5rem;
+        top: -16rem;
         font-size: 2.8rem;
     }
 
     ul{ 
-        transform: translate(-51%, -65%);
+        transform: translate(-51%, -75%);
     }
 
     #sorcerer-image2{
@@ -608,12 +609,12 @@ header{
 
     #base2{
         width:25rem; 
-        transform: translate(-20px, 10.5rem); 
+        transform: translate(-20px, 9.5rem); 
         filter: hue-rotate(0.4turn);
     }
 
     #shadow{
-        top: 16.5rem;
+        top: 15.5rem;
         width: 20.6rem;
         height: 4rem;
         left: 50%;
