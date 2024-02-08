@@ -9,33 +9,40 @@
 }
 
 ::-webkit-scrollbar {
-    width: 12px;
-    display: none;
+    width: 10px;
+    display: block;
 }
   
 ::-webkit-scrollbar-thumb {
+    background: var(--primary-color); 
     border-radius: 5rem;
-    opacity: 0;
+    opacity: 1;
 }
 
 body{
     margin: 0;
     padding:0;
-    overflow: auto;
+    overflow: show;
+}
+
+#container{
+    overflow: hidden;
+   
 }
 
 #background-domain{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    background-repeat:no-repeat;
-    background-size: cover;
+    position: relative;
+    top: -26rem;
+    left:50%;
+    transform: translate(-50%, -50%);
     width: 100%;
-    height: auto;
+
+    min-width: 1920px;
+    min-height: 1100px;
+    background-repeat: no-repeat;
     z-index: -2;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 }
 
 header{
@@ -64,8 +71,6 @@ header{
     margin: 0px;
 }
 
-
-
 a{
     text-decoration: none;
     color: black;
@@ -74,7 +79,7 @@ a{
 main{
     z-index: -1;
     position: absolute;
-    top: 52vh;
+    top: 51%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -85,10 +90,11 @@ main{
     z-index: -1;
     width: 55rem;
     display: block;
-    position: absolute;
-    top:  44%;
+    position: relative;
+    top:  50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -5%);
+    margin-bottom: 20px;
 }
 
 #left{
@@ -126,7 +132,6 @@ main p{
     text-shadow: 1.1px 1.1px 0px rgb(0, 0, 0), 0 0 0.2em rgb(0, 0, 0);
 }
 
-
 #appearance{
     top: 39.5rem;
     left: 0rem;
@@ -136,8 +141,6 @@ main p{
     width: 18rem;
     transform: translateY(-16.5rem)
 }
-
-
 
 #right video{
     margin: 2rem 0rem 0rem -21.5rem;   
@@ -153,6 +156,23 @@ main p{
     border: 3px solid white;
     border-radius: 2rem;
     width: 15rem;
+}
+
+#domain-info{
+width: 19rem; 
+transform: translatex(10rem);
+margin-top: 20px;
+}
+#extra{
+   width: 21rem; 
+   transform: translate(-9.5rem, 0rem);
+    margin-top: 25px;
+}
+
+#translation{
+    width: 21rem; 
+    transform: translateX(10rem); 
+    margin-top: -11rem;
 }
 
 #past{
@@ -210,33 +230,6 @@ main p{
     height: 12.5rem; 
 }
 
-@media only screen and (max-height: 950px){
-
-    main{
- 
-        position: absolute;
-        top: 30rem;
-        left: 50%;
-        transform: translate(-50%, -50%);
-
-    }
-    
-    #background-domain{
-        width: 1920px;
-        height: auto;
-
-    }
-
-   
-}
-
-@media only screen and (min-width:1920px){
-    #background-domain{
-        width: 100%;
-        height: auto;
-
-    }
-}
 
 @media only screen and (max-width: 1860px){
 
@@ -360,7 +353,7 @@ main p{
 
     #user{
         width: 40rem;
-        top:  21rem;
+  
 
     }
 
@@ -394,8 +387,7 @@ main p{
 
     #background-domain{
         top: 80%;
-        width: 2540px;
-        height: 1600px;
+      
     }
     #past{
 
@@ -458,9 +450,9 @@ top: 92rem;
 
 
     #background-domain{
-        top: 115%;
+        top: 30rem;
         width: 4200px;
-        height: 2450px;
+        height: 2350px;
     }
 
     #past{
@@ -477,7 +469,75 @@ top: 92rem;
     }
 }
 
-@media only screen and (min-width: 670px){
+@media only screen and (max-width: 700px){
 
+    #background-domain{
+        
+        top: 30rem;
+        width: 100%;
+        height: auto;
+ 
+    }
+    #user{
+        width: 35rem;
+    }
+
+    main{
+    position: relative;
+    height: 0rem;
+    top: -20px;
+    margin-bottom: 35px;
+    }
+
+    main p{
+        top: 0;
+        width: 85vw;
+    }
+
+    #left{
+    
+    }
+  
+
+    #appearance{
+        top: 0;
+        position: relative;
+        border: 3px solid white;
+        border-radius: 2rem;
+        width: 18rem;
+        transform: translateY(0);
+        margin: 25px 0px 5px 0px;
+    }
+    
+    #right video{
+        margin: 20px 0px 20px 0px;   
+        border: 3px solid white;
+        border-radius: 2rem;
+        width: 18rem;
+    }
+    
+    #hand{
+        top: 0;
+        left: 0;
+        position: relative;
+        border: 3px solid white;
+        border-radius: 2rem;
+        width: 20rem;
+        margin: 25px 0px 5px 0px;
+    }
+
+    #domain-info{
+        width: 85vw;
+        transform: translatex(0)
+    }
+    #extra{
+        width: 85vw;
+        transform: translatex(0)
+    }
+    #translation{
+        width: 85vw; 
+        transform: translateX(0); 
+        margin: 0;
+    }
 }
 
