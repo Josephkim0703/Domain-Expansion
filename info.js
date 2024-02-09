@@ -3,7 +3,7 @@ import { sorcerer } from "./data.js";
 const storedIndex = parseInt(localStorage.getItem('index'));
 
 function main(){
-    document.getElementById("background-domain").src =  sorcerer[storedIndex].back;
+    document.getElementById("body").style.backgroundImage =  "url("+sorcerer[storedIndex].back+")";
 
     setup();
 
@@ -58,7 +58,6 @@ function setup(){
     }
     //kenjaku's data
     if(storedIndex == 7){
-        document.getElementById("domain-vid").style.visibility = "hidden";
         document.getElementById("appearance").style.border = 3 +"px solid black";
         document.getElementById("hand").style.border = 3 +"px solid black";
         document.getElementById("domain-vid").style.border = 3 +"px solid black";

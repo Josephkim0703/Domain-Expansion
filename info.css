@@ -10,38 +10,25 @@
 
 ::-webkit-scrollbar {
     width: 10px;
-    display: block;
+    display: none;
 }
   
 ::-webkit-scrollbar-thumb {
     background: var(--primary-color); 
     border-radius: 5rem;
-    opacity: 1;
+    opacity: 0;
 }
 
 body{
     margin: 0;
     padding:0;
-    overflow: show;
-}
-
-#container{
     overflow: hidden;
-    max-width: 100%;
-    max-height: 100%;
+    background-image: url();
+    background-size:cover;
+    background-repeat: repeat;
+    background-position: center center;
 }
 
-#background-domain{
-    position: relative;
-    top: -26rem;
-    left:50%;
-    transform: translate(-50%, -50%);
-   background-size: cover;
-    background-repeat: no-repeat;
-    z-index: -2;
-    margin: 0;
-    padding: 0;
-}
 
 header{
     z-index: 10;
@@ -128,6 +115,13 @@ main p{
     margin-bottom: 0rem;
     margin-top: 10px;
     text-shadow: 1.1px 1.1px 0px rgb(0, 0, 0), 0 0 0.2em rgb(0, 0, 0);
+}
+
+#mangaAnime{
+    display:flex; 
+    margin: 0; 
+    flex-direction: row; 
+    width: 23rem;
 }
 
 #appearance{
@@ -261,9 +255,7 @@ margin-top: 20px;
     }
 
     main{
- 
-        position: absolute;
-        top: 52vh;
+        top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
@@ -304,7 +296,7 @@ margin-top: 20px;
     #past{
         display: none;
         top: 38rem;
-        left: 80rem;
+        left: 71rem;
         width: 30rem; 
         height: 10rem; 
     }
@@ -328,7 +320,11 @@ margin-top: 20px;
 
 @media only screen and (max-width:1740px){
 
- 
+    body{
+        margin: 0;
+        padding:0;
+        overflow-y: auto;
+    }
 
 
     #pain2{
@@ -357,8 +353,7 @@ margin-top: 20px;
     }
     
     main{
-    position: absolute;
-    top: 117%;
+    top: 120%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -399,6 +394,12 @@ margin-top: 20px;
 
 @media only screen and (max-width:1340px){
 
+  
+    body{
+        margin: 0;
+        padding:0;
+        overflow-y: auto;
+    }
 
     #pain2{
 
@@ -422,7 +423,7 @@ margin-top: 20px;
 
 
     main{
-top: 92rem;
+    top: 92rem;
     display: flex;
     flex-direction: column;
 }
@@ -441,9 +442,9 @@ top: 92rem;
 
 
     #past{
-        top: -12%;
+        top: -13%;
         left: 8rem;
-        height: 9rem;
+        height: 10rem;
         width: 25rem;
 
     }
@@ -456,6 +457,13 @@ top: 92rem;
 
 @media only screen and (max-width: 700px){
 
+
+
+    body{
+        margin: 0;
+        padding:0;
+        overflow-y: auto;
+    }
     #user{
         width: 35rem;
     }
@@ -512,5 +520,64 @@ top: 92rem;
         transform: translateX(0); 
         margin: 0;
     }
+    #mangaAnime{
+        display:block; 
+        margin: 0; 
+        width: 9rem;
+    }
+    
+#past{
+    top:  -100px;
+    left: 0;
+    position: relative;
+    width: 19rem; 
+    height: 8rem; 
+    margin-bottom: -80px;
+}
+
+#true{
+    display: none;
+    top: 0;
+    left: 11rem;
+    position: relative;
+    width: 20.5rem; 
+    height: 20rem; 
+    margin: -10px 0px -110px 0px;
+}
+
+#pain{
+    display: none;
+    top: -160px;
+    left:0;
+    position: relative;
+    border: 3px solid black;
+    border-radius: 2rem;
+    width: 20.5rem; 
+    height: 16.5rem; 
+    margin-bottom: -130px;
+}
+
+#pain1{
+    display: none;
+    top: 0;
+    left: 0;
+    position: relative;
+    border: 3px solid black;
+    border-radius: 2rem;
+    width: 16.5rem; 
+    height: 16.5rem; 
+}
+
+#pain2{
+    display: none;
+    top: -160px;
+    left: 0;
+    position: relative;
+    border: 3px solid black;
+    border-radius: 2rem;
+    width: 20.5rem; 
+    height: 17.5rem; 
+    margin-bottom: -135px;
+}
 }
 
