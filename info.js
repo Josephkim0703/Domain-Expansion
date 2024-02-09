@@ -29,7 +29,7 @@ function setup(){
     //hakari's data
     if(storedIndex == 5){
 
-        document.getElementById("appearance").style.transform = "translateY("+ -19 +"rem)";
+        
         document.getElementById("hand").style.transform = "translateY("+ 0.5 +"rem)";
         document.getElementById("header").style.fontSize =  2.5 +"rem";
         document.getElementById("sorcerer").style.fontSize =  2.5 +"rem";
