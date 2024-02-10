@@ -223,7 +223,15 @@ margin-top: 20px;
     width: 16.5rem; 
     height: 12.5rem; 
 }
-
+@media only screen and (min-height:1080px){
+    main{
+        top:35rem;
+    }
+    
+    #user{
+        transform: translate(-50%, 0%);
+    }
+}
 
 @media only screen and (max-width: 1860px){
 
@@ -325,7 +333,7 @@ margin-top: 20px;
     body{
         margin: 0;
         padding:0;
-        overflow-y: auto;
+        overflow: auto;
     }
 
 
@@ -400,7 +408,7 @@ margin-top: 20px;
     body{
         margin: 0;
         padding:0;
-        overflow-y: auto;
+        overflow: auto;
     }
 
     #pain2{
@@ -464,7 +472,7 @@ margin-top: 20px;
     body{
         margin: 0;
         padding:0;
-        overflow-y: auto;
+        overflow: auto;
     }
     #user{
         width: 100%;
