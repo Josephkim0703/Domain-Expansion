@@ -215,13 +215,13 @@ margin-top: 20px;
 
 #pain2{
     display: none;
-    top: 42%;
+    top: 40%;
     left: 74rem;
     position: absolute;
     border: 3px solid black;
     border-radius: 2rem;
-    width: 16.5rem; 
-    height: 12.5rem; 
+    width: 15.5rem; 
+    height: 11.5rem; 
 }
 @media only screen and (min-height:1080px){
     main{
@@ -237,10 +237,10 @@ margin-top: 20px;
 
     #pain2{
 
-        top: 41.5%;
+        top: 38.5%;
         left: 67.5rem;
-        width: 16rem; 
-        height: 12rem; 
+        width: 14rem; 
+        height: 11rem; 
     }
 
     #pain1{
@@ -339,7 +339,7 @@ margin-top: 20px;
 
     #pain2{
 
-        top: 41.5%;
+        top: 38.5%;
         left: 41.5rem;
   
     }
@@ -413,7 +413,7 @@ margin-top: 20px;
 
     #pain2{
 
-        top: 83%;
+        top: 68%;
         left: 1.5rem;
   
     }
