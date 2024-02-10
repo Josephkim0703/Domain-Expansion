@@ -30,7 +30,6 @@ function setup(){
     if(storedIndex == 5){
 
         
-        document.getElementById("hand").style.transform = "translateY("+ 0.5 +"rem)";
         document.getElementById("header").style.fontSize =  2.5 +"rem";
         document.getElementById("sorcerer").style.fontSize =  2.5 +"rem";
         document.getElementById("domain").style.fontSize =  2.5 +"rem";

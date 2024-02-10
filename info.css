@@ -41,7 +41,7 @@ header{
 #website1{
     font-family:'juju','Times New Roman';
     margin: 0rem 0rem 0rem 1.5rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
     transition: 0.4s;
     color: white;
     text-shadow: 0px 0px 10px black;
@@ -61,10 +61,12 @@ a{
     color: black;
 }
 
+
+
 main{
     z-index: 0;
     position: absolute;
-    top: 51%;
+    top:30rem;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -181,7 +183,7 @@ margin-top: 20px;
 #true{
     display: none;
     top: 18rem;
-    left: 74rem;
+    left: 65%;
     position: absolute;
     border: 3px solid black;
     border-radius: 2rem;
@@ -255,7 +257,7 @@ margin-top: 20px;
     }
 
     main{
-        top: 50%;
+
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
@@ -304,7 +306,7 @@ margin-top: 20px;
     #true{
    
         top: 17rem;
-        left: 74.5rem;
+        left: 68.5rem;
  
         width: 15rem; 
         height: 12rem; 
@@ -353,7 +355,7 @@ margin-top: 20px;
     }
     
     main{
-    top: 120%;
+    top: 69rem;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -409,21 +411,21 @@ margin-top: 20px;
     }
 
     #pain{
-        top: 66%;
+        top: 65%;
         left: 1.5rem;
 
     }
 
 
     #pain1{
-        top: 67.7%;
+        top: 66.7%;
         left: 1rem;
 
     }
 
 
     main{
-    top: 92rem;
+    top: 94rem;
     display: flex;
     flex-direction: column;
 }
@@ -450,7 +452,7 @@ margin-top: 20px;
     }
 
     #true{
-        top: 77%;
+        top: 75%;
         left: 22%;
     }
 }
